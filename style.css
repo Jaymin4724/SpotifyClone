@@ -1,0 +1,113 @@
+/* FOR APPLYING THE FONT FAMILY , GOT IT FROM GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap");
+body {
+  background-color: lavender;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+nav ul {
+  display: flex;
+  /* 👆NEW USED CSS👇 */
+  align-items: center;
+  list-style-type: none;
+  height: 70px;
+  background-color: #181818;
+  color: white;
+}
+nav ul li {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.brand img {
+  height: 50px;
+  width: 50px;
+  padding-right: 5px;
+}
+.brand {
+  font-weight: bolder;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.container {
+  min-height: 95%;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  padding: 30px;
+  background-image: url("front-view-modern-young-lady-colorful-coat-orange-t-shirt-with-black-earphones-posing-listening-music-black-background-dance-modern-fashion.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.bottom {
+  position: fixed;
+  bottom: 0%;
+  height: 80px;
+  width: 100%;
+  background-color:#181818;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.icons {
+  margin-top: 5px;
+}
+.icons i {
+  cursor: pointer;
+}
+#myprogressbar {
+  width: 120vh;
+  cursor: pointer;
+}
+.songitemcontainer {
+  margin-top: 20px;
+}
+.songitem {
+  border-radius: 40px;
+  height: 35px;
+  display: flex;
+  background-color: white;
+  color: black;
+  justify-content: space-between; /*done mistake and corrected, pehle value:center rkha tha uski jagh space between kia*/
+  align-items: center;
+  margin: 10 0px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+}
+.songitem img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.timestamp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timestamp i {
+  cursor: pointer;
+}
+.songinfo {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+.songinfo img {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+#masterplay {
+  margin: 0 10px;
+}
